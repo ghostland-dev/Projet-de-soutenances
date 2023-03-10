@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,6 @@ Route::middleware(['auth:sanctum', 'verified'])
 
 Route::prefix('/')
     ->middleware(['auth:sanctum', 'verified'])
-    ->group(function () {});
+    ->group(function () {
+        Route::resource('utilisateurs', UserController::class);
+    });

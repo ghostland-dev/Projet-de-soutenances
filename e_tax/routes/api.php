@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\AuthController;
 
 /*
@@ -25,4 +26,6 @@ Route::middleware('auth:sanctum')
 
 Route::name('api.')
     ->middleware('auth:sanctum')
-    ->group(function () {});
+    ->group(function () {
+        Route::apiResource('utilisateurs', UserController::class);
+    });
