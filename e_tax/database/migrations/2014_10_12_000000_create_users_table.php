@@ -15,9 +15,12 @@ return new class extends Migration {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('profile_photo_path')->nullable();
-            $table->integer('step')->default(1);
-            $table->string('firstname');
-            $table->string('lastname');
+            $table
+                ->integer('step')
+                ->default(1)
+                ->nullable();
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
             $table->string('mobile');
             $table->string('email')->unique();
             $table->string('fix');
