@@ -22,20 +22,20 @@ return [
         'removed' => 'Successfully removed',
     ],
 
-    'utilisateurs' => [
-        'name' => 'Utilisateurs',
-        'index_title' => 'liste des utilisateurs',
-        'new_title' => 'Portail d\'inscription',
+    'uilisateurs' => [
+        'name' => 'Uilisateurs',
+        'index_title' => 'Liste des utilisateurs',
+        'new_title' => 'Nouveau utilisateur',
         'create_title' => 'Créer un utilisateur',
         'edit_title' => 'Modifier un utilisateur',
-        'show_title' => 'Détails d\'un utilisateur',
+        'show_title' => 'D"tail d\'un utilisateur',
         'inputs' => [
-            'step' => 'Statut de client',
-            'firstname' => 'Pénom',
+            'step' => 'Satut de client',
+            'firstname' => 'Prénom',
             'lastname' => 'Nom',
             'mobile' => 'Mobile',
             'fix' => 'Fix',
-            'email' => 'Adresse E-mail',
+            'email' => 'Adress Email',
             'password' => 'Mot de passe',
         ],
     ],

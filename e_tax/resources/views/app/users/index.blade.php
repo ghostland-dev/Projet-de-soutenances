@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            @lang('crud.utilisateurs.index_title')
+            @lang('crud.uilisateurs.index_title')
         </h2>
     </x-slot>
 
@@ -49,23 +49,23 @@
                     <table class="w-full max-w-full mb-4 bg-transparent">
                         <thead class="text-gray-700">
                             <tr>
-                                <th class="px-4 py-3 text-left">
-                                    @lang('crud.utilisateurs.inputs.step')
+                                <th class="px-4 py-3 text-right">
+                                    @lang('crud.uilisateurs.inputs.step')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.utilisateurs.inputs.firstname')
+                                    @lang('crud.uilisateurs.inputs.firstname')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.utilisateurs.inputs.lastname')
+                                    @lang('crud.uilisateurs.inputs.lastname')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.utilisateurs.inputs.mobile')
+                                    @lang('crud.uilisateurs.inputs.mobile')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.utilisateurs.inputs.fix')
+                                    @lang('crud.uilisateurs.inputs.fix')
                                 </th>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.utilisateurs.inputs.email')
+                                    @lang('crud.uilisateurs.inputs.email')
                                 </th>
                                 <th></th>
                             </tr>
@@ -73,7 +73,7 @@
                         <tbody class="text-gray-600">
                             @forelse($users as $user)
                             <tr class="hover:bg-gray-50">
-                                <td class="px-4 py-3 text-left">
+                                <td class="px-4 py-3 text-right">
                                     {{ $user->step ?? '-' }}
                                 </td>
                                 <td class="px-4 py-3 text-left">

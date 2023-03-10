@@ -2,26 +2,22 @@
 
 <div class="flex flex-wrap">
     <x-inputs.group class="w-full">
-        <x-inputs.select name="step" label="Statut de client">
-            @php $selected = old('step', ($editing ? $user->step : '1')) @endphp
-            <option value="Presnetation" {{ $selected == 'Presnetation' ? 'selected' : '' }} >1</option>
-            <option value="Eligibilité" {{ $selected == 'Eligibilité' ? 'selected' : '' }} >2</option>
-            <option value="Validation" {{ $selected == 'Validation' ? 'selected' : '' }} >3</option>
-            <option value="Récolte des données" {{ $selected == 'Récolte des données' ? 'selected' : '' }} >4</option>
-            <option value="" {{ $selected == '' ? 'selected' : '' }} >5</option>
-            <option value="" {{ $selected == '' ? 'selected' : '' }} >6</option>
-            <option value="" {{ $selected == '' ? 'selected' : '' }} ></option>
-            <option value="" {{ $selected == '' ? 'selected' : '' }} ></option>
-        </x-inputs.select>
+        <x-inputs.number
+            name="step"
+            label="Satut de client"
+            :value="old('step', ($editing ? $user->step : '1'))"
+            max="255"
+            placeholder="étape actuel de client"
+        ></x-inputs.number>
     </x-inputs.group>
 
     <x-inputs.group class="w-full lg:w-6/12">
         <x-inputs.text
             name="firstname"
-            label="Pénom"
+            label="Prénom"
             :value="old('firstname', ($editing ? $user->firstname : ''))"
-            maxlength="60"
-            placeholder="votre prénom . . ."
+            maxlength="255"
+            placeholder="votre prénom ici . . ."
         ></x-inputs.text>
     </x-inputs.group>
 
@@ -30,8 +26,8 @@
             name="lastname"
             label="Nom"
             :value="old('lastname', ($editing ? $user->lastname : ''))"
-            maxlength="60"
-            placeholder="votre nom . . ."
+            maxlength="255"
+            placeholder="votre nom ici . . ."
         ></x-inputs.text>
     </x-inputs.group>
 
@@ -40,9 +36,8 @@
             name="mobile"
             label="Mobile"
             :value="old('mobile', ($editing ? $user->mobile : ''))"
-            maxlength="20"
-            placeholder="07123456784"
-            required
+            maxlength="255"
+            placeholder="07123456789"
         ></x-inputs.text>
     </x-inputs.group>
 
@@ -51,29 +46,29 @@
             name="fix"
             label="Fix"
             :value="old('fix', ($editing ? $user->fix : ''))"
-            maxlength="20"
-            placeholder="0212345678"
+            maxlength="255"
+            placeholder="02123456789"
             required
         ></x-inputs.text>
     </x-inputs.group>
 
-    <x-inputs.group class="w-full">
+    <x-inputs.group class="w-full lg:w-6/12">
         <x-inputs.email
             name="email"
-            label="Adresse E-mail"
+            label="Adress Email"
             :value="old('email', ($editing ? $user->email : ''))"
-            maxlength="150"
-            placeholder="accessenergies@exemple.com"
+            maxlength="255"
+            placeholder="accessenergies@gmail.com"
             required
         ></x-inputs.email>
     </x-inputs.group>
 
-    <x-inputs.group class="w-full">
+    <x-inputs.group class="w-full lg:w-6/12">
         <x-inputs.password
             name="password"
             label="Mot de passe"
             maxlength="255"
-            placeholder="*****************"
+            placeholder="***************"
             :required="!$editing"
         ></x-inputs.password>
     </x-inputs.group>

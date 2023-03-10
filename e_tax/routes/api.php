@@ -27,5 +27,5 @@ Route::middleware('auth:sanctum')
 Route::name('api.')
     ->middleware('auth:sanctum')
     ->group(function () {
-        Route::apiResource('utilisateurs', UserController::class);
+        Route::apiResource('users', UserController::class);
     });

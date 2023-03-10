@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            @lang('crud.utilisateurs.show_title')
+            @lang('crud.uilisateurs.show_title')
         </h2>
     </x-slot>
 
@@ -17,37 +17,37 @@
                 <div class="mt-4 px-4">
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.utilisateurs.inputs.step')
+                            @lang('crud.uilisateurs.inputs.step')
                         </h5>
                         <span>{{ $user->step ?? '-' }}</span>
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.utilisateurs.inputs.firstname')
+                            @lang('crud.uilisateurs.inputs.firstname')
                         </h5>
                         <span>{{ $user->firstname ?? '-' }}</span>
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.utilisateurs.inputs.lastname')
+                            @lang('crud.uilisateurs.inputs.lastname')
                         </h5>
                         <span>{{ $user->lastname ?? '-' }}</span>
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.utilisateurs.inputs.mobile')
+                            @lang('crud.uilisateurs.inputs.mobile')
                         </h5>
                         <span>{{ $user->mobile ?? '-' }}</span>
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.utilisateurs.inputs.fix')
+                            @lang('crud.uilisateurs.inputs.fix')
                         </h5>
                         <span>{{ $user->fix ?? '-' }}</span>
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.utilisateurs.inputs.email')
+                            @lang('crud.uilisateurs.inputs.email')
                         </h5>
                         <span>{{ $user->email ?? '-' }}</span>
                     </div>

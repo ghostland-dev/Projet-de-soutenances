@@ -28,5 +28,5 @@ Route::middleware(['auth:sanctum', 'verified'])
 Route::prefix('/')
     ->middleware(['auth:sanctum', 'verified'])
     ->group(function () {
-        Route::resource('utilisateurs', UserController::class);
+        Route::resource('users', UserController::class);
     });

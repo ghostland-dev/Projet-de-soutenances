@@ -20,7 +20,7 @@
                 <x-nav-dropdown title="Apps" align="right" width="48">
                         @can('view-any', App\Models\User::class)
                         <x-dropdown-link href="{{ route('users.index') }}">
-                        Utilisateurs
+                        Uilisateurs
                         </x-dropdown-link>
                         @endcan
                 </x-nav-dropdown>
@@ -153,7 +153,7 @@
             
                 @can('view-any', App\Models\User::class)
                 <x-jet-responsive-nav-link href="{{ route('users.index') }}">
-                Utilisateurs
+                Uilisateurs
                 </x-jet-responsive-nav-link>
                 @endcan
 

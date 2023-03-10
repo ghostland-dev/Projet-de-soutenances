@@ -28,8 +28,8 @@ class UserStoreRequest extends FormRequest
             'step' => ['nullable', 'numeric'],
             'firstname' => ['nullable', 'max:255', 'string'],
             'lastname' => ['nullable', 'max:255', 'string'],
-            'mobile' => ['required', 'max:255', 'numeric'],
-            'fix' => ['required', 'max:255', 'numeric'],
+            'mobile' => ['nullable', 'max:255', 'string'],
+            'fix' => ['required', 'max:255', 'string'],
             'email' => ['required', 'unique:users,email', 'email'],
             'password' => ['required'],
         ];
