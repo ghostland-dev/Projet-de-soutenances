@@ -9,10 +9,32 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
+              <div>
+                <x-jet-label for="name" value="{{ __('name') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+             </div>
+
+            <div>
+                <x-jet-label for="lastname" value="{{ __('lastname') }}" />
+                <x-jet-input id="lastname" class="block mt-1 w-full" type="text" name="lastname" :value="old('lastname')" required autofocus autocomplete="lastname" />
             </div>
+
+             <div>
+                <x-jet-label for="firstname" value="{{ __('firstname') }}" />
+                <x-jet-input id="firstname" class="block mt-1 w-full" type="text" name="firstname" :value="old('firstname')" required autofocus autocomplete="firstname" />
+            </div>
+
+              <div>
+                <x-jet-label for="mobile" value="{{ __('mobile') }}" />
+                <x-jet-input id="mobile" class="block mt-1 w-full" type="tel" name="mobile" :value="old('mobile')" required autofocus autocomplete="mobile" />
+            </div>
+
+
+              <div>
+                <x-jet-label for="fix" value="{{ __('fix') }}" />
+                <x-jet-input id="fix" class="block mt-1 w-full" type="tel" name="fix" :value="old('fix')" required autofocus autocomplete="fix" />
+            </div>
+
 
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
