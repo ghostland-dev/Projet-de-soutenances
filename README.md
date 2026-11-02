@@ -26,3 +26,10 @@ L'application E-tax est facile à utiliser. Une fois que vous êtes connecté, v
 ## Conclusion
 
 En conclusion, l'application E-tax est une solution efficace pour générer des dossiers de remboursement sur les taux fiscaux de TCGN et CSPE. Elle est facile à installer et à utiliser. Si vous rencontrez des problèmes lors de l'utilisation de l'application, n'hésitez pas à contacter notre équipe d'assistance technique.
+
+## Author
+
+**Ismail.M**, Software Engineer & DevOps
+
+- GitHub: [@ghostland-dev](https://github.com/ghostland-dev)
+- Website: [ismail-mouyahada.com](https://www.ismail-mouyahada.com)
